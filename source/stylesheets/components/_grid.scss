@@ -1,0 +1,11 @@
+@mixin bg-cover-style{
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin container {
+    padding: 0px;
+    @media (min-width: 768px){
+        padding: 0px 15px;
+    }
+}

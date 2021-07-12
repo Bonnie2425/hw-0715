@@ -7,53 +7,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/stylesheets/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
 
 </head>
 
 <body>
-  <div class="home-wrap wrap">
-    <nav class="header navbar navbar-expand-lg navbar-light bg-white">
+  <div class="home wrap">
+    <nav class="header navbar navbar-expand-lg navbar-light bg-white py-4">
       <div class="container">
+        <button class="navbar-toggler" style="border: 1px solid white;" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
         <div class="d-flex align-items-center">
           <a class="navbar-brand mr-1" href="#"
             style="background-image: url(./images/logo-dark.svg); height: 40px; width: 40px;"></a>
           <a class="navbar-brand mr-0" href="#"
             style="background-image: url(./images/logotype-lg-dark.svg); height: 27px; width: 171px;"></a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+
+        <a class="text-primary order-md-3" href=""><i class="fas fa-shopping-cart"></i></a>
+
+        <div class="collapse navbar-collapse order-md-2" id="navbarNav">
+          <ul class="navbar-nav ml-auto" style="font-weight: bold;">
             <li class="nav-item active">
               <a class="
               nav-link
-              p-0
-              mr-8" href="#">首頁 <span class="sr-only">(current)</span></a>
+              p-0 py-1 py-md-0
+              mr-md-8
+              text-primary
+              text-center" href="#">首頁 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="
               nav-link
               d-block
-              p-0
-              mr-8" href="#">甜點</a>
+              p-0 py-1 py-md-0
+              mr-md-8
+              text-primary
+              text-center" href="#">甜點</a>
             </li>
             <li class="nav-item">
               <a class="
               nav-link
-              p-0
-              mr-8" href="#">登入</a>
+              p-0 py-1 py-md-0
+              mr-md-8
+              text-primary
+              text-center" href="#">登入</a>
             </li>
-
           </ul>
         </div>
       </div>
 
     </nav>
+
+    <div class="container">
+      <div class="bg-cover" style="background-image: url('https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=925&q=80'); height: 496px; width: 100%; z-index: 0;"></div>
+
+      <div class="row no-gutters align-items-center justify-content-center" style="margin-top: -80px;">
+        <div class="col-md-10">
+          <div class="row no-gutters banner">
+            <a class="col-4 active" href="">
+              <span class="text-primary">本日精選</span>
+              <div class="color-wrap" style="background-color: rgba(255, 225, 128, 0.8);"></div>
+              <div class="bg-cover banner-img" style="background-image: url('https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=634&q=80');"></div>
+            </a>
+            <a class="col-4" style="border-right: 1px solid white; border-left: 1px solid white;" href="">
+              <span class="text-white">本日精選</span>
+              <div class="color-wrap" style="background-color: rgba(63, 93, 69, 0.8);"></div>
+              <div class="bg-cover banner-img" style="background-image: url('https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=634&q=80');"></div>
+            </a>
+            <a class="col-4" href="">
+              <span class="text-white">本日精選</span>
+              <div class="color-wrap" style="background-color: rgba(63, 93, 69, 0.8);"></div>
+              <div class="bg-cover banner-img" style="background-image: url('https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=634&q=80');"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
