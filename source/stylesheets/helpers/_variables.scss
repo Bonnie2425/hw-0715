@@ -84,7 +84,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "third":      $third
   ),
   $theme-colors
 );
@@ -153,6 +154,9 @@ $spacers: map-merge(
     6: 45px,
     7: 50px,
     8: 60px,
+    9: 75px,
+    10: 80px,
+    11: 115px
   ),
   $spacers
 );

@@ -60,5 +60,44 @@
         }
       }
     }
+    .why-choose ,.why-eat{
+      p{
+        
+      }
+      @media (min-width:768px) {
+        .bg-cover{
+          margin: -20px 0px;
+          &.sweet-show-img{
+            height: 460px !important;
+          }
+        }
+        p{
+          writing-mode: vertical-rl;
+          height: 280px;
+          line-height: 40px;
+        }
+        .img-text{
+          margin-top: -20px;
+        }
+      }
+    }
+    .card{
+      border-radius: 0px;
+      span{
+        position: absolute;
+        left: 20px;
+        writing-mode: vertical-rl;
+        padding: 10px;
+        letter-spacing: 5px;
+        background-color: $primary;
+        color: white;
+      }
+      .heart{
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        font-size: 20px;
+      }
+    }
   }
 }
