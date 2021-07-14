@@ -1,0 +1,38 @@
+.login-page {
+  .container {
+    @include container;
+    .form-control{
+      transition: none !important;
+      background-clip: unset;
+     &:focus, :focus-visible{
+      box-shadow: none;
+      border: none;
+      outline: 0;
+     }
+    }
+    .link-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &::after{
+        content: '';
+        height: 1px;
+        width: 50px;
+        background-color: $secondary;
+        position: absolute;
+        right: 20%;
+      }
+      &::before{
+        content: '';
+        height: 1px;
+        width: 50px;
+        background-color: $secondary;
+        position: absolute;
+        left: 20%;
+      }
+    }
+    a{
+      border-radius: 0px;
+    }
+  }
+}

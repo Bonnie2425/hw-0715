@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="signin-page wrap overflow-hidden">
+  <div class="login-page wrap overflow-hidden">
     <nav class="header navbar navbar-expand-lg navbar-light bg-white py-4">
       <div class="container">
         <button class="navbar-toggler" style="border: 1px solid white;" type="button" data-toggle="collapse"
@@ -37,31 +37,101 @@
               nav-link
               p-0 py-1 py-md-0
               mr-md-8
-              text-primary
               text-center" href="http://localhost:3000/">首頁 </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="
               nav-link
               d-block
               p-0 py-1 py-md-0
               mr-md-8
-              text-primary
-              text-center" href="http://localhost:3000/sweet.html">甜點<span class="sr-only">(current)</a>
+              text-center" href="http://localhost:3000/sweet.html">甜點</a>
             </li>
             <li class="nav-item">
               <a class="
               nav-link
               p-0 py-1 py-md-0
               mr-md-8
-              text-primary
-              text-center" href="#">登入</a>
+              text-center
+              active" href="http://localhost:3000/login.html">登入<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6">
+
+              <div class="d-block d-md-none">
+                <h2 class="bg-primary text-white py-5 text-center" style="font-weight: bold; font-size: 36px;">會員登入</h2>
+                <div class="bg-third p-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <a href="" class="btn btn-block bg-white" style="height: 56px; padding: 15px 0px; border-right: 1px solid #EAF0ED;"><img
+                        src="./images/ic-facebook-logotype.svg" style="height: 21px;" alt=""></a>
+                    <a href="" class="btn btn-block bg-white mt-0" style="height: 56px; padding: 15px 0px; border-right: 1px solid #EAF0ED;"><img
+                        src="./images/ic-yahoo.svg" style="height: 22px;" alt=""></a>
+                    <a href="" class="btn btn-block bg-white mt-0" style="height: 56px; padding: 15px 0px;"><img
+                        src="./images/ic-google.svg" style="height: 31px;" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-primary px-4">
+                <h2 class="text-white py-5 text-center d-none d-md-block" style="font-weight: bold; font-size: 36px;">
+                  會員登入</h2>
+                <div class="input-group pt-4 pt-md-0" style="margin-bottom: 16px;">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-third" style="border-radius: 0px; padding: 16px 20px;"
+                      id="basic-addon1"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control bg-third"
+                    style="height: 56px; border-radius: 0px; border-left: none;" placeholder="電子信箱/手機號碼"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group" style="margin-bottom: 13px;">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-third" style="border-radius: 0px; padding: 16px 20px;"
+                      id="basic-addon1"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="text" class="form-control bg-third"
+                    style="height: 56px; border-radius: 0px; border-left: none;" placeholder="請輸入使用者密碼"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group form-check mb-0">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-white" style="margin-bottom: 22px;"
+                    for="exampleCheck1">記住我</label>
+                </div>
+              </div>
+              <a href="" class="btn btn-block btn-warning btn-lg text-primary"
+                style="font-weight: bold; padding: 16px; font-size: 24px;">登入帳號</a>
+            </div>
+            <div class="col-12 col-md-6 d-none d-md-block">
+              <div class="py-md-2">
+                <div class="bg-third px-4 py-5">
+                  <h4 class="link-title text-secondary text-center" style="margin-bottom: 36px;">連結社群帳號</h4>
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <a href="" class="btn btn-block bg-white" style="height: 56px;  padding: 15px 0px;"><img
+                        src="./images/ic-facebook-logotype.svg" style="height: 21px;" alt=""></a>
+                    <a href="" class="btn btn-block bg-white"
+                      style="height: 56px; padding: 15px 0px; margin-top: 16px;"><img src="./images/ic-yahoo.svg"
+                        style="height: 22px;" alt=""></a>
+                    <a href="" class="btn btn-block bg-white"
+                      style="height: 56px; padding: 15px 0px; margin-top: 16px;"><img src="./images/ic-google.svg"
+                        style="height: 31px;" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="mt-md-8">
       <div class="bg-primary py-4">
