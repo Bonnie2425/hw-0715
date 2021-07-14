@@ -1,0 +1,41 @@
+.sweet-page {
+  .container {
+    @include container;
+    .list-group a:hover {
+      color: $primary !important;
+      background-color: $third !important;
+    }
+    .card{
+      border-radius: 0px;
+      .bg-cover{
+        @include bg-cover-style
+      }
+      span{
+        position: absolute;
+        left: 20px;
+        writing-mode: vertical-rl;
+        padding: 10px;
+        letter-spacing: 5px;
+        background-color: $primary;
+        color: white;
+      }
+    }
+    .pagination{
+      justify-content: center;
+      margin: 30px 0px;
+
+      .active{
+        background-color: $primary;
+        color: white;
+      }
+      .page-link{
+        border-radius: 0px !important;
+      }
+      @media (min-width:768px){
+        justify-content: flex-end;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+}
