@@ -1,0 +1,44 @@
+.deliver-page {
+  .container {
+    @include container;
+    .progrsee-circle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &::after {
+        content: "";
+        height: 1px;
+        width: 80%;
+        background-color: $secondary;
+        position: absolute;
+      }
+    }
+    .circle-around {
+      position: relative;
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $primary;
+      border: 1px solid $secondary;
+      &.active {
+        border: 1px solid $third;
+        &::before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          top: 1px;
+          left: 1px;
+          background-color: $third;
+          border-radius: 50%;
+          position: absolute;
+          border: 1px solid $primary;
+        }
+      }
+    }
+    .bg-cover{
+      @include bg-cover-style
+    }
+  }
+}
